@@ -1,0 +1,22 @@
+{
+    "version": 2,
+    "name": "node-backend-app",
+    "builds": [
+      {
+        "src": "server.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "index.js"
+      }
+    ],
+    "env": {
+      "NODE_ENV": "production",
+      "DATABASE_URL": "postgresql://neondb_owner:npg_NoHC06jMYQAz@ep-young-haze-a8jl75kh-pooler.eastus2.azure.neon.tech/neondb?sslmode=require",
+      "JWT_SECRET": "secret"
+    }
+  }
+  

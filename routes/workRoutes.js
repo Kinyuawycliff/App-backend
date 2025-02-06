@@ -1,12 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { 
-    getAllWorks, 
-    createWork, 
-    getWorkById, 
-    updateWork, 
-    deleteWork 
-} = require('../controllers/workController');
+const { getAllWorks, createWork, getWorkById, updateWork, deleteWork } = require('../controllers/workController');
 const { protect } = require('../middleware/authMiddleware'); // Middleware to protect routes
 
 // Routes
